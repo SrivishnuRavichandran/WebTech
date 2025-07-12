@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Burger Combo Logo</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: #fdd377;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .container {
+      position: relative;
+      width: 500px;
+      height: 500px;
+      display: flex;
+      align-items: flex-end;
+      justify-content: center;
+    }
+
+    .fries {
+      position: absolute;
+      bottom: 40px;
+      left: 10px;
+      width: 160px;
+      z-index: 0;
+      transform: rotate(-10deg);
+    }
+
+    .burger {
+      width: 320px;
+      z-index: 1;
+    }
+
+    .cola {
+      position: absolute;
+      right: 40px;
+      bottom: 0;
+      width: 130px;
+      z-index: 0;
+    }
+
+    .price-tag {
+      position: absolute;
+      bottom: 40px;
+      /* lowered from 75px to 40px */
+      left: 50px;
+      background-color: red;
+      color: white;
+      padding: 20px 18px;
+      border-radius: 50%;
+      border: 3px dashed white;
+      font-weight: bold;
+      font-size: 22px;
+      text-align: center;
+      z-index: 3;
+      width: 90px;
+      height: 90px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+
+    .price-tag span {
+      font-size: 14px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <img src="./fries.png.png" class="fries">
+    <img src="./Burger.png.png" class="burger">
+    <img src="./coke.png.png" class="cola">
+    <div class="price-tag">
+      $5.<span>49</span><br>ONLY
+    </div>
+  </div>
+</body>
+
+</html>

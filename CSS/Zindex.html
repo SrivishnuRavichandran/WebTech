@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>9 Boxes</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        section {
+            height: 500px;
+            width: 800px;
+            border: 2px solid black;
+            position: relative;
+        }
+
+        section div {
+            height: 70px;
+            width: 70px;
+            border: 2px solid black;
+            position: absolute;
+            text-align: center;
+            line-height: 70px;
+            font-weight: bold;
+        }
+
+        section div:nth-child(1) {
+            background-color: lightcoral;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+        }
+
+        section div:nth-child(2) {
+            background-color: lightskyblue;
+           /* position: absolute;
+            top: 0px;
+            right: 0px; */
+             position: absolute;
+            top: 0px;
+            left: 0px;
+            z-index: 1;
+
+        }
+
+        section div:nth-child(3) {
+            background-color: lightgreen;
+             position: absolute;
+            top: 0px;
+            left: 0px;
+;
+        }
+
+        section div:nth-child(4) {
+            background-color: plum;
+             position: absolute;
+            top: 0px;
+            left: 0px;
+            z-index: 3;
+            
+        }
+
+        section div:nth-child(5) {
+            background-color: khaki;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            
+        }
+
+    </style>
+</head>
+<body>
+    <section>
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+ 
+    </section>
+</body>
+</html>

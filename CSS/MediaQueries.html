@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MediaQuery</title>
+    <style>
+        @media print {
+            p {
+                color: red;
+
+
+                border: 2px solid black;
+                background-color: blue;
+                font-size: 24px;
+                height: 200px;
+            }
+        }
+
+        h2 {
+            margin-top: 100px;
+            color: green;
+        }
+
+        @media screen {
+            h1 {
+                color: black;
+                background-color: red;
+            }
+        }
+
+        @media screen and (width>1000px) {
+            h1 {
+                background-color: black;
+                color: white;
+            }
+
+            h1::before {
+                content: "Desktop";
+            }
+
+        }
+
+        /* @media screen and (width>700px) and (width<1000px) */
+        @media screen and (min-width:500px) and (max-width:700px){
+            h1::before {
+                content: "Laptop";
+            }
+
+        }
+
+        @media screen and (width>500px) and (width<700px) {
+            h1::before {
+                content: "Tablet";
+            }
+
+        }
+
+        @media screen and (width>300px) and (width<500px) {
+            h1::before {
+                content: "Mobile";
+            }
+
+        }
+        @media screen and (orientation:portrait){
+            h1{
+                background-color: red;
+                color: black;
+            }
+            h1::before{
+                content: "Portrait";
+            }
+        }
+        @media screen and (orientation: landscape){
+             h1{
+                background-color:black;
+                color:red;
+            }
+            h1::before{
+                content: "Landscape";
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1>  Screen</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates libero rem expedita vero odio minus, itaque
+        fugit, minima sapiente corrupti nobis culpa consequatur veritatis excepturi. Nobis sequi eaque tenetur deserunt
+        doloremque voluptates qui, nemo ipsa?</p>
+    <h2>Naan DHannn</h2>
+
+</body>
+
+</html>

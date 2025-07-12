@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Grid Calculator</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    section {
+      height: 500px;
+      width: 400px;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: repeat(5, 1fr);
+      gap: 5px;
+      padding: 10px;
+      font-family: Arial, sans-serif;
+      font-weight: bold;
+      color: white;
+      font-size: 20px;
+      background-color: black;
+    }
+
+    section div {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    div:nth-child(1) {
+      background-color: orangered;
+      grid-column: 1 / span 2;
+    }
+
+    div:nth-child(2) {
+      background-color: gray;
+    }
+
+    div:nth-child(3) {
+      background-color: gray;
+    }
+
+    div:nth-child(4) {
+      background-color: dimgray;
+    }
+
+    div:nth-child(5),
+    div:nth-child(6),
+    div:nth-child(7),
+    div:nth-child(9),
+    div:nth-child(10),
+    div:nth-child(11),
+    div:nth-child(13),
+    div:nth-child(14),
+    div:nth-child(15),
+    div:nth-child(17),
+    div:nth-child(18),
+    div:nth-child(19),
+    div:nth-child(21),
+    div:nth-child(22) {
+      background-color: dimgray;
+    }
+
+    div:nth-child(8),
+    div:nth-child(12),
+    div:nth-child(16) {
+      background-color: gray;
+    }
+
+    div:nth-child(20) {
+      background-color: deepskyblue;
+      grid-row: 5 / span 2;
+      grid-column: 4 / 5;
+    }
+
+    div:nth-child(23) {
+      background-color: dimgray;
+    }
+  </style>
+</head>
+
+<body>
+  <section>
+    <div>AC</div>
+    <div>/</div>
+    <div>x</div>
+    <div>-</div>
+    <div>7</div>
+    <div>8</div>
+    <div>9</div>
+    <div>+</div>
+    <div>4</div>
+    <div>5</div>
+    <div>6</div>
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+    <div>0</div>
+    <div>.</div>
+    <div>=</div>
+  </section>
+</body>
+
+</html>

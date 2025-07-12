@@ -1,0 +1,22 @@
+/* h1
+{
+    color:antiquewhite;
+    background-color: Blue;
+    border:solid;
+    width: 500px;
+    height:100px;
+} */
+h1
+{
+    color:aqua;
+    background-color: black;
+}
+
+        p{
+    color: brown;
+    background-color: antiquewhite;
+    border: solid;
+    width: 500px;
+    height: 300px;
+        }
+     

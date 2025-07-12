@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            height: 100vh;
+            /* width: 100vw; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            width: 500px;
+            margin: 40px;
+            border: solid;
+        }
+
+        header,
+        footer {
+            background-color: #00bfff;
+            text-align: center;
+            padding: 20px;
+            color: white;
+            font-size: 18px;
+        }
+
+        .main-area {
+            display: flex;
+
+        }
+
+        .main-content {
+            background-color: #32cd32;
+            flex: 2;
+            padding: 80px;
+            color: white;
+            text-align: center;
+            font-size: 18px;
+            margin-left: 100px;
+        }
+
+
+        .sidebar {
+            background-color: #ba55d3;
+            flex: 1;
+            padding: 10px;
+            color: white;
+            text-align: center;
+            font-size: 18px;
+
+            margin-right: 100px;
+        }
+
+        .twin-area {
+            display: flex;
+
+        }
+
+        .twin {
+            background-color: #ffa500;
+            flex: 1;
+            padding: 60px;
+            color: white;
+            text-align: center;
+            font-size: 18px;
+            margin-left: 100px;
+        }
+
+        .twin+.twin {
+            margin-left: 5px;
+            margin-right: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">.header</header>
+        <main class="main-area">
+            <section class="main-content">.main-content</section>
+            <aside class="sidebar">.sidebar</aside>
+        </main>
+        <section class="twin-area">
+            <article class="twin">.twin</article>
+            <article class="twin">.twin</article>
+        </section>
+        <footer class="footer">.footer</footer>
+    </div>
+
+
+</body>
+
+</html>

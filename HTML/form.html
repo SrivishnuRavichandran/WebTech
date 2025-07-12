@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="https://youtube.com" novalidate method="post">
+        <!-- <label for="Name">Name:</label>
+        <input id="Name"><br><br>
+        <label for="Email">Email:</label>
+        <input id="Email"><br><br>
+    <Button>Submit</Button> -->
+    <center><label for="Username">Username:</label>
+    <input id="Username" type="text" name="username" value="" autocomplete="off" placeholder="Enter username" size="50"><br><br>
+    <label for="Email">Email:</label>
+    <input id="Email" type="Email" name="Email" value="Sriv@gmail.com" autocomplete="off" placeholder="Enter email id" readonly><br><br>
+    <label for="Password">Password:</label>
+    <input id="Password" type="Password" name="Password" autofocus minlength="5" maxlength="12" pattern="[a-Z0-9@!]{5}"><br><br>
+    <label for="Number">Number:</label>
+    <input id="Number" type="tel" name="Number"><br><br>
+    <label for="DOB">DOB:</label>
+    <input id="DOB" type="date" name="date"><br><br>
+    <label for="Age">Age:</label>
+    <input id="Age" type="number" name="Age" min="1" max="25" step="5"><br><br>
+    <label for="Address">Address:</label>
+    <textarea id="Address" rows="10" cols="60" name="Address"></textarea><br><br>
+    <label for="">Gender :  </label>
+    <input type="radio" name="gender" value="male" checked>Male
+    <input type="radio" name="gender" value="femlae">Female
+    <input type="radio" name="gender" value="others">Others<br><br>
+    <label for="resume">Resume</label>
+    <input type="file" id="resume" name="resume"><br><br>
+    <label for="location">Location</label>
+    <input type="url" id="location" name="location"><br><br>
+    <label for="" >Language</label>
+    <select multiple>
+        <option disabled selected value="" hidden>Select Language</option>
+        <optgroup label="South India"> 
+            <option>Tamil</option>
+            <option>English</option>
+            <option value="">Malayalam</option>
+            <option value="">Kannada</option>
+        </optgroup>
+        <optgroup label="North India">
+            <option value="">Hindi</option>
+            <option value="">Gujarati</option>
+            <option value="">Punjabi</option>
+            <option value="">Marathi</option>
+        </optgroup>
+    </select><br><br>
+    <label for="">Skills</label>
+    <input type="checkbox" name="Skills" value="Webtech">Webtech
+    <input type="checkbox" name="Skills" value="SQL" checked disabled>Sql
+    <input type="checkbox" name="Skills" value="Java">Java
+    <input type="checkbox" name="Skills" value="Python">Python
+    <input type="checkbox" name="Skills" value="Testing">Testing <br>
+    <label for="" type="time">Time</label>
+    <input type="time"><br><br>
+    <label for="datetime">Date & Time</label>
+    <input type="datetime-local"><br><br>
+    <label for="week">Week</label>
+    <input type="week"><br><br>
+    <label for="">Month</label>
+    <input type="month"><br><br>
+    <label for="">Color</label>
+    <input type="color"><br><br>
+    <label for="">range</label>
+    <input type="range"><br><br>
+    <label for="">search</label>
+    <input type="search"><br><br>
+    <button type="submit">Submit</button>
+    <button type="Button">Just a button</button>
+    <button type="reset">Reset</button>
+</center>
+</form>
+</body> 
+</html>

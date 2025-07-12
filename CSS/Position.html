@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>9 Boxes</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        section {
+            height: 400px;
+            width: 500px;
+            border: 2px solid black;
+            position: relative;
+        }
+
+        section div {
+            height: 70px;
+            width: 70px;
+            border: 2px solid black;
+            position: absolute;
+            text-align: center;
+            line-height: 70px;
+            font-weight: bold;
+        }
+
+        section div:nth-child(1) {
+            background-color: lightcoral;
+            top: 20px;
+            left: 20px;
+        }
+
+        section div:nth-child(2) {
+            background-color: lightskyblue;
+            top: 20px;
+            left: 215px;
+        }
+
+        section div:nth-child(3) {
+            background-color: lightgreen;
+            top: 20px;
+            right: 20px;
+        }
+
+        section div:nth-child(4) {
+            background-color: plum;
+            top: 150px;
+            left: 20px;
+        }
+
+        section div:nth-child(5) {
+            background-color: khaki;
+            top: 150px;
+            left: 215px;
+        }
+
+        section div:nth-child(6) {
+            background-color: lightseagreen;
+            top: 150px;
+            right: 20px;
+        }
+
+        section div:nth-child(7) {
+            background-color: orange;
+            bottom: 20px;
+            left: 20px;
+        }
+
+        section div:nth-child(8) {
+            background-color: violet;
+            bottom: 20px;
+            left: 215px;
+        }
+
+        section div:nth-child(9) {
+            background-color: lightblue;
+            bottom: 20px;
+            right: 20px;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+    </section>
+</body>
+</html>

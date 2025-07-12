@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+    <h1><strong>ZOO KEEPER APPLICATION FORM</strong></h1>
+    <h5><i>Please complete the form mandatory fields are marked with a*</i></h5>
+    <fieldset>
+        <legend><strong>CONTACT DETAILS</strong></legend>
+        <table>
+            <tr>
+                <td><label for="NAME">NAME  <sup>*</sup></label></td>
+                <td><input type="text" required id="NAME" name="Name"></td>
+            </tr>
+             <tr>
+                <td><label for="Telephone">Telephone </label></td>
+                <td><input type="tel" id="Telephone" name="Telephone"></td>
+            </tr>
+
+             <tr>
+                <td><label for="EMAIL">EMAIL <sup>*</sup></label></td>
+                <td><input type="email" required id="EMAIL"name="Email"></td>
+            </tr>
+        </table>
+    </fieldset>
+    <fieldset>
+        <legend><strong>PERSONAL INFORMATION</strong></legend>
+        <table>
+            <tr>
+                <td><label for="Age"> <sup>*</sup>Age</label></td>
+                <td><input type="number" id="Age" required name="Age"></td>
+            </tr>
+            <tr>
+                <td><label for="gend">Gender</label></td>
+                <td><select name="gend" id="gend">
+            <option value="" disabled selected hidden>Select Gender</option>
+            <option value="Male">Male</option>
+            <option value="Female" selected >Female</option>
+            <option value="Others">Others</option>
+            </td>
+
+            </tr>
+            <tr>
+                <td><label for="text">When did you <br> first Know you <br> Wanted to be a <br>Zoo-Keeper?</label></td>
+                <td><textarea  rows="4" cols="20" value="text" id="text"></textarea></td>
+            </tr>
+        </table>
+    </fieldset>
+    <fieldset>
+        <legend>Pick Your Favorite Animals</legend>
+        <input type="checkbox" id="zebra" name="animals" value="Zebra">
+        <label for="zebra">Zebra</label>
+
+        <input type="checkbox" id="cat" name="animals" value="Cat">
+        <label for="cat">Cat</label>
+
+        <input type="checkbox" id="anaconda" name="animals" value="Anaconda">
+        <label for="anaconda">Anaconda</label>
+
+        <input type="checkbox" id="human" name="animals" value="Human">
+        <label for="human">Human</label><br>
+
+        <input type="checkbox" id="elephant" name="animals" value="Elephant">
+        <label for="elephant">Elephant</label>
+
+        <input type="checkbox" id="wildebeest" name="animals" value="Wildebeest">
+        <label for="wildebeest">Wildebeest</label>
+
+        <input type="checkbox" id="pigeon" name="animals" value="Pigeon">
+        <label for="pigeon">Pigeon</label>
+
+        <input type="checkbox" id="crab" name="animals" value="Crab">
+        <label for="crab">Crab</label><br></fieldset>
+        <br>
+    <button>Submit Application</button>
+    </form>
+</body>
+</html>

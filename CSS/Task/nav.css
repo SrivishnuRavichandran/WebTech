@@ -1,0 +1,21 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+nav{
+    height: 70px;
+    background-color: black;
+    color: lawngreen;
+    font-size: 2rem;
+    padding: 15px 20px;
+}
+span{
+    padding: 10px 20px;
+}
+span:hover
+{
+    background-color: green;
+    border-radius: 25px;
+    cursor: pointer;
+}
